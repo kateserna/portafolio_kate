@@ -191,7 +191,7 @@ img{
   background-color: var(--secondary-color);
 }
 
-.card-proyects {
+.card-projects {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
   gap: 20px; 
@@ -296,7 +296,31 @@ img{
 
 .single-project-info{
   display: grid;
-  grid-template-rows: auto 1 fr auto;
+  grid-template-rows: auto 1fr auto;
   grid-template-columns: 1fr 1fr;
-  grid-gap: 20 px;;
+  grid-gap: 20px;;
+}
+
+.single-project-description, .single-project-btn{
+  text-align: center;
+  grid-column: 1 / -1;
+}
+
+.single-project-img img {
+  width: 100%;
+  border: 2px, solid var(--secondary-color);
+  border-radius: 20px;
+}
+
+.single-project-details ul {
+  list-style: none;
+  padding-bottom: 20px;
+}
+
+.single-project-btn .next {
+  float: left;
+}
+
+.single-project-btn .prev {
+  float: right;
 }
