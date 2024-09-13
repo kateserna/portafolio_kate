@@ -1,7 +1,7 @@
 /* Variables */
 :root {
-  --main-color: #191c32;
-  --primary-color: aqua;
+  --main-color: #010919;
+  --primary-color: #1ff8ff;
   --secondary-color: #fff;
 }
 
@@ -15,7 +15,7 @@
 /* Main styling */
 body,
 html {
-  font-family: "Raleway", sans-serif;
+  font-family: "Handlee", cursive;
   color: var(--secondary-color);
   line-height: 1.7em;
   background-color: var(--main-color);
@@ -104,6 +104,8 @@ a {
 }
 
 .navbar .logo{
+  font-size: 1.3em;
+  font-weight: 600;
   float: left;
   padding-top: 20px;
 }
@@ -146,11 +148,11 @@ a {
 }
 
 .banner-header {
-  height: 60vh; /* tom el 60% del view port es decir el 60% de la pantalla del alto*/
+  height: 60vh; /* toma el 60% del view port es decir el 60% de la pantalla del alto*/
   width: 100%;
   overflow: hidden;
-  background: linear-gradient(rgba(29, 38, 113, 0.6), rgba(29, 28, 113, 0.6)), 
-  url("../img/developer.webp");
+  background: radial-gradient(rgba(1, 9, 25, 0.8), rgba(0, 0, 0, 0.6), rgba(31, 248, 255, 0.5)), 
+  url("../img/developer3.webp");
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
@@ -307,7 +309,7 @@ img{
 }
 
 .single-project-img img {
-  width: 100%;
+  width: 80%;
   border: 2px, solid var(--secondary-color);
   border-radius: 20px;
 }
@@ -318,9 +320,30 @@ img{
 }
 
 .single-project-btn .next {
-  float: left;
+  float: right;
 }
 
 .single-project-btn .prev {
-  float: right;
+  float: left;
+}
+
+/* About Me*/
+.skills {
+  display: grid;
+  grid-template-columns: repeat(6, 1fr);
+  gap: 20px;
+  margin: 30px 0;
+}
+
+.card-skill img {
+  width: 100%;
+  border: 2px solid var(--secondary-color);
+  background-color: var(--secondary-color);
+  border-radius: 20px;
+}
+
+.card-skill img:hover {
+  transform: scale(1.1);
+  border: 2px solid var(--secondary-color);
+  transition: 0.3s;
 }
